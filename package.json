@@ -1,0 +1,17 @@
+{
+  "name": "prosperity_liberation_lp",
+  "version": "1.0.0",
+  "description": "Landing page for Prosperity and Liberation Toolkit and its associated tests",
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.2"
+  }
+}
