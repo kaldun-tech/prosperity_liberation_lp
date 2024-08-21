@@ -13,7 +13,7 @@ Choose any directory on your PC, then run npm init playwright@latest, select Jav
 When initialization complete, extract and overwrite content of the archive.
 Run tests with the --ui option for interactive mode. You can also use Visual Studio Code with installed playwright test plugin.
 ```sh
-mpx playwright test [--ui]
+npx playwright test [--ui]
 ```
 
 ## Configuration
