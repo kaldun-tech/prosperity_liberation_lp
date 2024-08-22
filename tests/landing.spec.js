@@ -14,9 +14,13 @@ async function verifyLink(page, linkText) {
   return await pagePromise;
 }
 
+test.use({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' });
+
 test('just a test', async ({ page}) => {
+  //
   await page.goto('https://taraskaldun.substack.com/embed');
   await expect(page.getByText('Kaldun Prosperity and Liberation')).toBeVisible();
+
 });
 
 test('substack main link works', async ({ page }) => {
