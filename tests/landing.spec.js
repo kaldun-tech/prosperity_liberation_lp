@@ -14,6 +14,11 @@ async function verifyLink(page, linkText) {
   return await pagePromise;
 }
 
+test('just a test', async ({ page}) => {
+  await page.goto('https://taraskaldun.substack.com/embed');
+  await expect(page.getByText('Kaldun Prosperity and Liberation')).toBeVisible();
+});
+
 test('substack main link works', async ({ page }) => {
   await page.goto(siteUrl);
   const newPage = await verifyLink(page, 'Kaldun Prosperity and Liberation')
